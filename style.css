@@ -1,0 +1,540 @@
+
+body{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  overflow-x: hidden;
+}
+
+.content{
+  display: block;
+}
+
+/* Header */
+header{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  background-color: #e8e9e9;
+}
+.wrapper{
+  width: 100%;
+  display: flex;    
+  background-color: white;
+}
+
+.menu{
+  width: 100%;
+  height: 90px;
+  display: inline-block;
+  text-align: center;
+  background-color: #182333;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.menu nav ul{
+  list-style-type: none;
+}
+
+.menu a{
+  text-decoration: none;
+}
+
+.menu li {
+  color:rgb(242, 242, 242);
+  font-size: 18px;
+
+  display: inline-block;
+
+  margin:25px 0px 40px 20px;
+
+  width: auto;
+  padding: 5px;
+  border: 1px solid transparent;
+  font-weight: 900;
+}
+
+.menu li:hover{
+ background-color:#182333;
+ border-radius: 2px;
+ color:#ffffff;
+ border: 1px solid #ececec;
+}
+
+
+#menu-mobile{
+width: 40px;
+height: 40px;
+border-radius: 5px;
+cursor: pointer;
+
+position: absolute;
+right: 20px;
+top:20px;
+color: white;
+
+display: none;
+
+z-index: 9999;
+}
+#menu-mobile img{
+width: 40px;
+cursor: pointer;
+}
+#menu-mobile-width{
+display: none;
+}
+
+.logo{
+position: absolute;
+}
+.logo img{
+width: 82px;
+margin-top: 8px;
+}
+
+
+/*  Contato Fixo na lateral direito na borda de baixo  */
+#contato-fixo{
+  width: 80px;
+  position: absolute;
+  right: 20px;
+  bottom: 150px;
+  z-index: 999;
+  background-color: red;
+}
+
+#contato-fixo .center{
+  text-align: right;
+  position: fixed;
+}
+
+#fechar{
+display: none;
+}
+
+
+#contato-fixo img{
+  margin-right: 20px;
+  cursor: pointer;
+  animation: botao-fix 2s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(-1);
+}
+
+@keyframes botao-fix {
+  0% {
+      width: 80px;
+  }
+  50% {
+      width: 74px;
+  }
+  100% {
+      width: 80px;
+  }
+}
+
+.fechar{
+  width: 100%;
+  text-align: right;
+}
+.info-contatos-fixo .fechar #fecharcontato{
+  margin-top: 15px;
+  margin-right: 10px;
+
+  font-size: 18px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color:white;
+}
+
+
+.slider{
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-width{
+ display: flex;
+ transition: all ease 2s;
+}
+
+.slider-item{
+  width: 100vw;
+  height:100vh;
+  background-position: center;
+}
+
+.slider-item img{
+  width:100%;
+  height: 100%;
+}
+
+
+.slider-controls{
+  position: absolute;
+  width: 98%;
+  margin-left: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-control{
+  width:0px;
+  height:0px;
+  
+  border-right: 25px solid transparent;
+  border-left: 30px solid rgb(225, 225, 225);
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+
+  cursor: pointer;
+}
+.slider-control:first-of-type{
+  transform: scaleX(-1);
+}
+
+
+
+.sessao-obra{
+  width: 100%;
+  background-color:#182333;
+  margin-top: -20px;
+  padding: 10px 0px;
+}
+.sessao-obra h2{
+  color:white;
+  font-size: 25px;
+  margin-left: 5%;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.slider-obra{
+  width: 90%;
+  overflow: hidden;
+  margin:0 auto;
+}
+
+
+.slider-width-obra{
+ height: 300px;
+ display: flex;
+ transition: all ease 1s;
+}
+
+
+.slider-item-obra{
+  width:100%;
+  height: 100%;
+  background-position: center;
+  margin: 0px 5px;
+}
+
+.slider-item-obra img{
+  width:100%;
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border: 1px solid rgb(175, 175, 175);
+  background-color: #000000;
+}
+
+
+.slider-controls-obra{
+  position: absolute;
+  width: 100%;
+  margin-left: -4.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.slider-control-obra{
+  width:0px;
+  height:0px;
+  
+  border-right: 25px solid transparent;
+  border-left: 30px solid rgb(225, 225, 225);
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+
+  cursor: pointer;
+}
+
+.slider-control-obra:first-of-type{
+  transform: scaleX(-1);
+}
+
+
+.sessao-servico{
+  width: 100%;
+  height:80vh;
+  background-color:#9e9e9e;   
+}
+
+.sessao-servico .titulo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.barra-titulo p{
+  width: 250px;
+  color: rgb(37, 154, 172);
+  border-bottom: 1px solid;
+  width: 60px;
+  margin-top: -15px;
+}
+.sessao-servico .titulo h2{
+  font-size: 25px;
+  color:#ffffff;
+}
+
+.slider-servico{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider-width-servico{
+ height: 100%;
+ display: flex;
+ transition: all ease 0.5s;
+ margin:0 auto;
+ justify-content: center;
+}
+
+.slider-item-servico{
+  width: 50%;
+  margin: 4px;
+  box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.slider-item-servico h2{
+  text-align: left;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(37, 154, 172);
+  font-size: 20px;
+}
+
+.slider-item-servico h2:nth-child(3){
+  color: rgb(103, 103, 103);
+}
+
+
+
+/* Sessão Sobre Nós */
+.sessao-sobrenos{
+  width: 100%;
+  height: auto;
+  background-color: rgb(18, 23, 33);
+  padding-top:10px;
+}
+
+#carrossel-sobrenos{
+  width: 100%;
+  display: flex;
+ }
+
+
+
+.sessao-sobrenos h2{
+  text-align: left;
+  padding:0px 50px ;
+}
+.sessao-sobrenos .titulo{
+  color: #ffffff;
+}
+
+.sobre-nos p{
+  padding:0px 50px ;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: rgb(215, 215, 215);
+}
+
+
+.sobre-nos-img img{
+  width: 100vh;
+}
+
+/* Footer */
+footer{
+  background-color:rgb(56, 56, 56);
+  text-align: center;
+  color:white;
+  font-size: 12px;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+.sobre-nos-img img{
+  display: none;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+body{
+  background-color: #182333;
+}
+  .header{
+      width: 100%;
+      height: 90px;
+      background-color: #182333;
+      border-bottom: 1px solid #FFFFFF;
+      position: fixed;
+      z-index: 9999;
+  }
+  .menu{
+      display: none;
+  }
+
+  #menu-mobile{
+      display: block;
+  }
+
+  #menu-mobile-width{
+      display: block;
+      position: absolute;
+      width:0px;
+      cursor: pointer;
+      margin-top: 91px;
+      transition: all ease 1s;
+      background-color: #182333;
+      left:0px;
+  }
+  
+    #menu-mobile-width #nav{
+      display: none;
+    }
+ 
+    #menu-mobile-width ul{
+      list-style-type: none;
+    }
+
+    #menu-mobile-width a{
+      text-decoration: none
+    }
+
+    #menu-mobile-width li{
+      width: calc(100% + 40px);
+      font-size: 12px;
+      color: rgb(255, 255, 255);
+      margin:20px -40px;
+      padding-top:8px;
+      padding-bottom:8px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    #menu-mobile-width li:hover{
+      background-color: rgb(18, 23, 33);
+    }
+
+  .fechar{
+    display: none;
+  }
+
+
+
+ .slider-controls{
+    display: none;
+  }
+
+  .slider-item{
+    height: 80vh;
+  }
+
+.sessao-obra h2{
+  font-size: 18px;
+}
+ .slider-obra{
+    width: 100%;
+  }
+
+  .slider-width-obra{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    transition: all ease 1s;
+  }
+  
+  .slider-item-obra img{
+    width:100vw;
+    height: 100%;
+    margin-left: -9px;
+  }
+
+.slider-controls-obra{
+  width:100%;
+}
+
+.slider-controls-obra{
+  position: absolute;
+  width: 100%;
+  margin-left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 90px;
+}
+
+.slider-control-obra{
+  border-right: 10px solid transparent;
+  border-left: 28px solid rgb(225, 225, 225);
+  border-bottom: 15px solid transparent;
+  border-top: 10px solid transparent;
+}
+
+.sessao-obra h2, .barra-titulo h2, .sessao-sobrenos h2 {
+  font-size: 16px;
+}
+.slider-item-servico{
+  width: 95%;
+}
+
+.sessao-servico .titulo h2{
+  font-size: 18px;
+  color:#ffffff;
+}
+
+.sessao-servico{
+  height:50vh;
+}
+
+}
+
+@media only screen and (max-width: 425px) {
+.sessao-servico{
+  height:65vh;
+}
+
+.sobre-nos p{
+  font-size: 15px;
+  width: 90%;
+  padding:0px 20px ;
+}
+
+}
+
+@media only screen and (max-width:375px) {
+.sessao-servico{
+  height:80vh;
+}
+}
